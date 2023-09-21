@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  min-height: 100vh;
   background-color: beige;
   margin: 0px;
 }
@@ -63,4 +65,9 @@ img {
   padding: 20px;
   height: 200px;
   width: 300px;
+}
+footer {
+  margin-top: auto;
+  height: 100px;
+  background-color: #3a3450;
 }
