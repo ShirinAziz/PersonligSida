@@ -1,8 +1,10 @@
 body {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: beige;
   margin: 0px;
+  background-image: url(img/bild8.jpg);
 }
 .menu {
   height: 100px;
@@ -38,7 +40,7 @@ h1 {
   margin-left: 115px;
 }
 hr {
-  width: 90%;
+  width: 85%;
   height: 3px;
   background-color: brown;
   border-color: brown;
@@ -50,7 +52,7 @@ hr {
 }
 .about {
   color: beige;
-  background-color: #615683;
+  background-color: #746994;
   padding: 20px;
   height: 200px;
   width: 300px;
@@ -61,7 +63,7 @@ img {
 }
 .intrest {
   color: beige;
-  background-color: #615683;
+  background-color: #746994;
   padding: 20px;
   height: 200px;
   width: 300px;
