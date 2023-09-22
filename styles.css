@@ -4,7 +4,24 @@ body {
   min-height: 100vh;
   background-color: beige;
   margin: 0px;
-  background-image: url(img/bild8.jpg);
+}
+
+.backgroundimage {
+  background-image: url(img/bild9.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  width: 85%;
+  margin: auto;
+}
+.backgroundimage > p {
+  color: beige;
+  font-size: x-large;
+  margin-top: 5%;
+  font-style: italic;
+  text-align: center;
+  padding: 60px;
 }
 .menu {
   height: 100px;
@@ -61,12 +78,23 @@ img {
   height: 241px;
   width: 320px;
 }
-.intrest {
+.interest {
   color: beige;
   background-color: #746994;
   padding: 20px;
   height: 200px;
   width: 300px;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 10px;
 }
 footer {
   margin-top: auto;
