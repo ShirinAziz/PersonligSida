@@ -2,8 +2,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: beige;
+  background-color: rgb(237, 219, 219);
   margin: 0px;
+}
+.main {
+  width: 85%;
+  margin: auto;
+  background-color: rgb(228, 210, 210);
 }
 
 .backgroundimage {
@@ -12,11 +17,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   height: 300px;
-  width: 85%;
   margin: auto;
 }
 .backgroundimage > p {
-  color: beige;
+  color: rgb(248, 229, 229);
   font-size: x-large;
   margin-top: 5%;
   font-style: italic;
@@ -25,7 +29,7 @@ body {
 }
 .menu {
   height: 100px;
-  background-color: #3a3450;
+  background-color: rgb(126, 95, 95);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,7 +37,7 @@ body {
 }
 .menu > p {
   margin-left: 110px;
-  color: beige;
+  color: rgb(248, 229, 229);
   font-size: x-large;
   font-family: cursive;
 }
@@ -49,15 +53,15 @@ body {
 
 .menulink {
   text-decoration: none;
-  color: beige;
+  color: rgb(248, 229, 229);
 }
 h1 {
-  color: black;
+  color: rgb(101, 77, 77);
   font-family: cursive;
   margin-left: 115px;
 }
 hr {
-  width: 85%;
+  width: 100%;
   height: 3px;
   background-color: brown;
   border-color: brown;
@@ -68,8 +72,8 @@ hr {
   gap: 50px;
 }
 .about {
-  color: beige;
-  background-color: #746994;
+  color: rgb(248, 229, 229);
+  background-color: rgb(153, 116, 116);
   padding: 20px;
   height: 200px;
   width: 300px;
@@ -79,11 +83,23 @@ img {
   width: 320px;
 }
 .interest {
-  color: beige;
-  background-color: #746994;
+  color: rgb(248, 229, 229);
+  background-color: rgb(153, 116, 116);
   padding: 20px;
   height: 200px;
   width: 300px;
+}
+.photogallery {
+  font-style: italic;
+  font-size: x-large;
+  color: rgb(81, 61, 61);
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.hr2 {
+  width: 90%;
+  height: 1%;
+  margin: auto;
 }
 .gallery {
   display: flex;
@@ -96,8 +112,12 @@ img {
   margin: auto;
   padding: 20px 10px;
 }
+.nurse {
+  height: auto;
+  width: 30%;
+}
 footer {
   margin-top: auto;
   height: 100px;
-  background-color: #3a3450;
+  background-color: rgb(126, 95, 95);
 }
