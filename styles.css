@@ -141,6 +141,47 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+/* kod för kontakta mig sida börjar här*/
+.p {
+  margin: auto;
+  text-align: center;
+  font-size: large;
+  color: rgb(56, 45, 45);
+}
+form {
+  margin: auto;
+}
+.form {
+  width: auto;
+  height: auto;
+}
+.form,
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  min-width: 300px;
+
+  color: rgb(56, 45, 45);
+}
+.input {
+  background-color: rgb(193, 166, 166);
+  border-color: white;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  height: 2em;
+  margin-top: 8px;
+  font-size: 1.1rem;
+  color: rgb(56, 45, 45);
+  background-color: rgb(193, 166, 166);
+  border-color: white;
+  min-width: 200px;
+}
+/* kod för kontakta mig sida avslutas här*/
 footer {
   margin-top: auto;
   height: 100px;
