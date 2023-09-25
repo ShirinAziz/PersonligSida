@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initials-scale=1.0" />
     <title>Shirins sida</title>
     <link rel="icon" type="image/x-icon" href="img/rose.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -10,51 +11,65 @@
       crossorigin="anonymous"
     ></script>
   </head>
-</html>
-<body>
-  <nav class="menu">
-    <div class="leftmenucontainer">
-      <img class="menuicon" src="img/rose.png" />
-      <a class="name" href="/index.html">Shirin Aziz</a>
-    </div>
+  <body>
+    <nav class="menu">
+      <div class="leftmenucontainer">
+        <img class="menuicon" src="img/rose.png" />
+        <a class="name" href="/index.html">Shirin Aziz</a>
+      </div>
 
-    <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-    <ul>
-      <li><a class="menulink" href="#home">Hem</a></li>
-      <li><a class="menulink" href="#photos">Foto galleri</a></li>
-      <li><a class="menulink" href="#career">Karriär</a></li>
-      <li><a class="menulink" href="/contact.html">Kontakta mig</a></li>
-    </ul>
-  </nav>
-  <p class="p">
-    För att komma i direkt kontakt med mig var god fyll i följande
-  </p>
-  <form class="form">
-    <label>Förnamn: <input class="input" type="text" required /></label>
-    <label>Efternamn: <input class="input" type="text" required /></label>
-    <label>
-      E-mail:
-      <input class="input" type="email" required
-    /></label>
-    <label
-      >Hur kan jag hjälpa dig?
-      <textarea
-        class="input"
-        rows="6"
-        cols="30"
-        placeholder="Skriv här..."
-        required
-      ></textarea>
-    </label>
-    <input type="submit" value="Submit" />
-  </form>
-  <footer>
-    <div class="iconscontainer">
-      <a href="/contact.html"> <img class="icons" src="img/instagram.png" /></a>
-      <a href="/contact.html"> <img class="icons" src="img/facebook.png" /></a>
-    </div>
-  </footer>
-</body>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul>
+        <li>
+          <a class="menulink" href="/index.html" onclick="hideMenu()">Hem</a>
+        </li>
+        <li>
+          <a class="menulink" href="/index.html#photos" onclick="hideMenu()"
+            >Foto galleri</a
+          >
+        </li>
+        <li>
+          <a class="menulink" href="/index.html#career" onclick="hideMenu()"
+            >Karriär</a
+          >
+        </li>
+        <li><a class="menulink" href="/contact.html">Kontakta mig</a></li>
+      </ul>
+    </nav>
+    <p class="p">
+      För att komma i direkt kontakt med mig var god fyll i följande
+    </p>
+    <form class="form">
+      <label>Förnamn: <input class="input" type="text" required /></label>
+      <label>Efternamn: <input class="input" type="text" required /></label>
+      <label>
+        E-mail:
+        <input class="input" type="email" required
+      /></label>
+      <label
+        >Hur kan jag hjälpa dig?
+        <textarea
+          class="input"
+          rows="6"
+          cols="30"
+          placeholder="Skriv här..."
+          required
+        ></textarea>
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+    <footer>
+      <div class="iconscontainer">
+        <a href="/contact.html">
+          <img class="icons" src="img/instagram.png"
+        /></a>
+        <a href="/contact.html">
+          <img class="icons" src="img/facebook.png"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

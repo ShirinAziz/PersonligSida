@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/7201e95923.js"
       crossorigin="anonymous"
     ></script>
+    <script src="myscripts.js"></script>
   </head>
   <body>
     <nav class="menu">
@@ -22,9 +23,15 @@
         <i class="fa-solid fa-bars"></i>
       </label>
       <ul>
-        <li><a class="menulink" href="#home">Hem</a></li>
-        <li><a class="menulink" href="#photos">Foto galleri</a></li>
-        <li><a class="menulink" href="#career">Karriär</a></li>
+        <li><a class="menulink" href="#home" onclick="hideMenu()">Hem</a></li>
+        <li>
+          <a class="menulink" href="#photos" onclick="hideMenu()"
+            >Foto galleri</a
+          >
+        </li>
+        <li>
+          <a class="menulink" href="#career" onclick="hideMenu()">Karriär</a>
+        </li>
         <li><a class="menulink" href="/contact.html">Kontakta mig</a></li>
       </ul>
     </nav>
