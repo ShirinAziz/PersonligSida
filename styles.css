@@ -10,7 +10,6 @@ body {
   margin: auto;
   background-color: rgb(228, 210, 210);
 }
-
 .backgroundimage {
   background-image: url(img/bild9.jpg);
   background-repeat: no-repeat;
@@ -29,6 +28,18 @@ body {
   font-style: italic;
   text-align: center;
   padding: 60px;
+}
+.checkbtn {
+  font-size: 30px;
+  color: rgb(248, 229, 229);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
 }
 .menu {
   height: 100px;
@@ -149,9 +160,7 @@ h4 {
   font-size: larger;
   color: rgb(56, 45, 45);
 }
-form {
-  margin: auto;
-}
+
 .form,
 .input {
   display: flex;
@@ -197,6 +206,42 @@ footer {
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .main {
     width: 100%;
+    margin-top: 100px;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+  }
+  ul > li:first-child {
+    margin-top: 40px;
+  }
+  a:hover,
+  a.active {
+    background-color: none;
+    color: rgb(114, 86, 86);
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(57, 43, 43);
+    top: 80px;
+    left: 0;
+    text-align: center;
+    gap: 40px;
+    font-size: large;
+  }
+  #check ~ ul {
+    display: none;
   }
   h1 {
     text-align: center;
@@ -231,6 +276,13 @@ footer {
   .main {
     width: 100%;
   }
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
   h1 {
     margin-left: 64px;
   }
@@ -259,5 +311,8 @@ footer {
 @media screen and (min-width: 1100px) {
   h1 {
     margin-left: 64px;
+  }
+  form {
+    margin: auto;
   }
 }
