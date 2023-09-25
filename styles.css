@@ -16,8 +16,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 300px;
-  margin: auto;
 }
 .menuicon {
   height: 62px;
@@ -46,6 +44,7 @@ body {
   gap: 4px;
 }
 .name {
+  text-decoration: none;
   color: rgb(248, 229, 229);
   font-size: x-large;
   font-family: cursive;
@@ -67,10 +66,9 @@ body {
 h1 {
   color: rgb(101, 77, 77);
   font-family: cursive;
-  margin-left: 64px;
 }
 hr {
-  width: 100%;
+  width: 99.5%;
   height: 3px;
   background-color: brown;
   border-color: brown;
@@ -146,7 +144,8 @@ h4 {
 }
 /* kod för kontakta mig sida börjar här*/
 .p {
-  margin: auto;
+  padding: 4%;
+  text-align: center;
   font-size: larger;
   color: rgb(56, 45, 45);
 }
@@ -157,13 +156,9 @@ form {
 .input {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 10px;
   font-size: medium;
   min-width: 300px;
-  margin: auto;
-  text-align: center;
-
   color: rgb(56, 45, 45);
 }
 .input {
@@ -197,4 +192,72 @@ footer {
 .icons {
   height: 32px;
   width: 32px;
+}
+/* SMALL*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .main {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+  }
+  hr {
+    width: 90%;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about,
+  .interest {
+    width: 80%;
+    font-size: large;
+  }
+  .career {
+    flex-direction: column-reverse;
+  }
+  .nurse {
+    height: 60%;
+    width: 60%;
+  }
+  .text {
+    height: 80%;
+    width: 80%;
+  }
+}
+/* MEDIUM*/
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  .main {
+    width: 100%;
+  }
+  h1 {
+    margin-left: 64px;
+  }
+  hr {
+    width: 85%;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about,
+  .interest {
+    width: 80%;
+    font-size: large;
+  }
+  .about {
+    text-align: center;
+  }
+  .interest > h3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* LARGE*/
+@media screen and (min-width: 1100px) {
+  h1 {
+    margin-left: 64px;
+  }
 }
