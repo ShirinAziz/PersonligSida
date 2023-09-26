@@ -1,4 +1,4 @@
-/**/
+/*The code below is common code that applies to all screen sizes, further down I implement more specific code for different screen sizes.*/
 body {
   display: flex;
   flex-direction: column;
@@ -30,18 +30,12 @@ body {
   text-align: center;
   padding: 60px;
 }
-.checkbtn {
-  font-size: 30px;
-  color: rgb(248, 229, 229);
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
+/* Hide Hamburger menu */
+
 #check {
   display: none;
 }
+/*In order to easily structure the code, I used flexbox throughout the code*/
 .menu {
   height: 100px;
   background-color: rgb(126, 95, 95);
@@ -70,7 +64,6 @@ body {
   display: inline;
   margin-right: 10px;
 }
-
 .menulink {
   text-decoration: none;
   color: rgb(248, 229, 229);
@@ -154,7 +147,7 @@ h4 {
   color: rgb(56, 45, 45);
   text-align: center;
 }
-/* kod för kontakta mig sida börjar här*/
+/* Code for contact me page starts herer.*/
 .p {
   text-align: center;
   font-size: larger;
@@ -163,7 +156,6 @@ h4 {
 form {
   margin: auto;
 }
-
 .form,
 .input {
   display: flex;
@@ -188,8 +180,7 @@ input[type="submit"] {
   border-color: white;
   min-width: 200px;
 }
-
-/* kod för kontakta mig sida avslutas här*/
+/* code for contact me page ends here*/
 footer {
   margin-top: auto;
   height: 100px;
@@ -206,7 +197,7 @@ footer {
   height: 32px;
   width: 32px;
 }
-/* SMALL*/
+/* SMALL. here I apply more specific code for smaller devices and screens.*/
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .main {
     width: 100%;
@@ -219,11 +210,9 @@ footer {
   .menuicon {
     margin-left: 20px;
   }
-
   h1 {
     margin-left: 5%;
   }
-
   .container {
     display: flex;
     align-items: center;
@@ -250,7 +239,7 @@ footer {
     padding: 4%;
   }
 }
-/* MEDIUM*/
+/* MEDIUM. here I apply more specific code for medium devices and screens*/
 @media screen and (min-width: 768px) and (max-width: 1099px) {
   .main {
     width: 100%;
@@ -284,11 +273,18 @@ footer {
     justify-content: center;
   }
 }
-/*Small och Medium*/
+/*Small and Medium. to avoid repeating code, I made this media quert with specific code that fits both small and medium sized devices and screens. */
 @media screen and (min-width: 360px) and (max-width: 1099px) {
   .checkbtn {
+    font-size: 30px;
+    color: rgb(248, 229, 229);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
     display: block;
   }
+
   nav ul li {
     display: block;
   }
@@ -300,7 +296,6 @@ footer {
     background-color: none;
     color: rgb(114, 86, 86);
   }
-
   #check:checked ~ ul {
     display: flex;
     flex-direction: column;
@@ -316,14 +311,16 @@ footer {
   #check ~ ul {
     display: none;
   }
-
   hr {
     width: 100%;
   }
 }
-
-/* LARGE*/
+/* LARGE. more specific code for larger screens from small laptops to larger screens*/
 @media screen and (min-width: 1100px) {
+  /*Hide hamburger menu from large devices (small laptops and above)*/
+  .checkbtn {
+    display: none;
+  }
   h1 {
     margin-left: 5%;
   }
