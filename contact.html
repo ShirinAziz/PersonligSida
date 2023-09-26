@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initials-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shirins sida</title>
     <link rel="icon" type="image/x-icon" href="img/rose.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -43,11 +43,15 @@
       För att komma i direkt kontakt med mig var god fyll i följande
     </p>
     <form class="form">
-      <label>Förnamn: <input class="input" type="text" required /></label>
-      <label>Efternamn: <input class="input" type="text" required /></label>
+      <label
+        >Förnamn: <input class="input" type="text" id="firstname" required
+      /></label>
+      <label
+        >Efternamn: <input class="input" type="text" id="lastname" required
+      /></label>
       <label>
         E-mail:
-        <input class="input" type="email" required
+        <input class="input" type="email" id="email" required
       /></label>
       <label
         >Hur kan jag hjälpa dig?
@@ -55,6 +59,7 @@
           class="input"
           rows="6"
           cols="30"
+          id="message"
           placeholder="Skriv här..."
           required
         ></textarea>
