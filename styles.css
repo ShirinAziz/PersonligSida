@@ -275,6 +275,7 @@ footer {
 }
 /*Small and Medium. to avoid repeating code, I made this media quert with specific code that fits both small and medium sized devices and screens. */
 @media screen and (min-width: 360px) and (max-width: 1099px) {
+  /*Hamburger menu to small and medium devices*/
   .checkbtn {
     font-size: 30px;
     color: rgb(248, 229, 229);
